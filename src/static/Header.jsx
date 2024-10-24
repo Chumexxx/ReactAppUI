@@ -4,9 +4,19 @@ import HeaderLogo from '../assets/kuda.png'
 import NigIcon from '../assets/nigeria.png'
 import { IoReorderTwoOutline } from "react-icons/io5";
 import {Link} from "react-router-dom"
+import {useState} from "react"
+// import SideBar from './SideNav';
+
 
 const Header = () => {
+    const [toggle, setToggle] = useState(false)
+
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
+
     return(
+        <>
         <Container>
             <LogoNav>
                 <Logo>
@@ -48,12 +58,14 @@ const Header = () => {
                 <ConBtn>
                     <img src={NigIcon} alt="nig" />
                 </ConBtn>
-                <SideNav>
+                <SideNav onClick={handleToggle}>
                     <IoReorderTwoOutline />
                 </SideNav>
             </Buttons>
 
         </Container>
+        {toggle == false ? null : <SideNav/>}
+        </>
     )
 }
 
