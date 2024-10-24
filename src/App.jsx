@@ -1,6 +1,5 @@
 import styled from "styled-components"
 // import { MdAddToHomeScreen } from "react-icons/md";
-import Footer from "./Static/Footer";
 import Header from "./Static/Header";
 import Personal from "./pages/Personal";
 import {BrowserRouter, Routes, Route} from "react-router-dom"
