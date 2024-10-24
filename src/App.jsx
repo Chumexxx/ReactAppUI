@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Business from "./pages/Business";
 import Company from "./pages/Company";
 import Help from "./pages/Help";
+import Footer from "./Static/Footer";
 
 const App = () => {
   const d = 2+3
