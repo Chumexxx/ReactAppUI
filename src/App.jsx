@@ -25,7 +25,7 @@ const App = () => {
 
           </Routes>
 
-        npm <Footer/>
+        <Footer/>
 
       </BrowserRouter>
     </div>
